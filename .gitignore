@@ -217,3 +217,5 @@ FakesAssemblies/
 *.exe
 *.out
 *.app
+ShaderBoy/SFML/SFML-2.2/cmake/
+ShaderBoy/SFML/SFML-2.2/examples/
