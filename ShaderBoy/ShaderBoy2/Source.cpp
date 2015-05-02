@@ -20,7 +20,7 @@ int main()
 
 	sf::Shader shader;
 	bool error = false;
-	if(!shader.loadFromFile("Shaders/basic.vs","Shaders/basic.fs")){
+	if(!shader.loadFromFile("Shaders/basic.vs","Shaders/Raymarching.fs")){
 		std::cout<<"Error When loading basic"<<std::endl;
 		error = true;
 	}
@@ -34,7 +34,7 @@ int main()
 	float globalTime = 0.;
 
 	sf::Clock clock;
-    while (window.isOpen())
+	while (window.isOpen() && !sf::Keyboard::isKeyPressed(sf::Keyboard::Escape))
     {
         sf::Event event;
         while (window.pollEvent(event))
